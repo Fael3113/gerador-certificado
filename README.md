@@ -1,4 +1,4 @@
-# GeradorCertificado
+# GeradorCertificado (será modificado ao final do projeto, no CSS utilizei o Bootstrap)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.5.
 
