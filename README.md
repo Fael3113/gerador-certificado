@@ -1,59 +1,84 @@
-# GeradorCertificado (será modificado ao final do projeto, no CSS utilizei o Bootstrap)
+# Gerador de Certificado
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.5.
+Aplicação web desenvolvida com Angular para geração de certificados digitais. O projeto foi construído como estudo prático do framework Angular, utilizando Bootstrap para estilização e implantado via Netlify.
 
-## Development server
+## Tecnologias
 
-To start a local development server, run:
+- [Angular](https://angular.dev/) 21.1.5
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Netlify](https://www.netlify.com/) (deploy)
+
+## Pré-requisitos
+
+- Node.js (versão recomendada: 18 ou superior)
+- Angular CLI instalado globalmente
+
+```bash
+npm install -g @angular/cli
+```
+
+## Instalação
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/Fael3113/gerador-certificado.git
+cd gerador-certificado
+npm install
+```
+
+## Executando o projeto
+
+### Servidor de desenvolvimento
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse `http://localhost:4200/` no navegador. A aplicação recarrega automaticamente ao detectar alterações nos arquivos fonte.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Build de produção
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Os artefatos de build serão gerados no diretório `dist/`. A build de produção aplica otimizações de performance automaticamente.
 
-## Running unit tests
+## Testes
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### Testes unitários
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+Os testes unitários são executados com o [Vitest](https://vitest.dev/).
 
-For end-to-end (e2e) testing, run:
+### Testes end-to-end
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Estrutura do projeto
 
-## Additional Resources
+```
+gerador-certificado/
+├── public/
+├── src/
+│   └── app/
+├── angular.json
+├── netlify.toml
+├── package.json
+└── tsconfig.json
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Deploy
+
+O projeto está configurado para deploy contínuo via Netlify. O arquivo `netlify.toml` contém as configurações necessárias para o ambiente de produção.
+
+## Licença
+
+Distribuído sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
